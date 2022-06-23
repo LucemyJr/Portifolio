@@ -1,0 +1,164 @@
+body{
+    font-family: 'Oswald';
+    margin: 0;
+    padding: 0;
+    background-color: #2b2d38;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.logo h2{
+    color: #fff;
+    font-size: 50px;
+}
+
+.logo span{
+    color: #8500b9;
+}
+
+.sessao1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.titulo h1{
+    color: #fff;
+    font-size: 45px;
+    line-height: 50px;
+    margin-top: -16px;
+}
+
+.titulo h2{
+    color: #fff;
+    font-weight: normal;
+}
+
+.titulo a{
+    display: inline-block;
+    background-color: #8500b9;
+    padding: 15px 60px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.titulo a:hover {
+    background-color: #5e0083;
+    transition: 0.3s all;
+}
+.linkedin{
+    text-decoration: none;
+    font-family: 'Oswald';
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.image1 img{
+    width: 460px;
+    height: auto;
+    margin-top: -40px;
+    margin-left: 55px;
+}
+.projetos{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 100px;
+ margin-bottom: 100px;
+}
+
+.projetos h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.projeto{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.projetoopcoes{
+    background-color: #222529;
+    width: 200px;
+    height: 180px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.projetoopcoes:hover{
+    background-color: #8500b9;
+    transition: 0.3s all;
+    transform: scale(1.1);
+}
+
+.projetoopcoes img{
+    width: 65px;
+}
+
+.sessao2{
+    background-color: #8500b9;
+    height: 342px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.sessao2 a{
+    border-radius: 20px;
+}
+
+.titulo2 h1{
+    color: #fff;
+    font-size: 35px;
+}
+
+.titulo2 h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: -26px;
+
+}
+
+.titulo2 a{
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px 85px;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.curriculo{
+    text-decoration: none;
+}
+
+.image2 img{
+    width: 380px;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 100px;
+
+}
+.imagesocial{
+    width: 30px;
+    margin-left: 45px;    
+}
+.redesocial{
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+    padding-bottom: 20px;
+}
