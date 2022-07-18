@@ -1,3 +1,11 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
+
 body{
     font-family: 'Oswald';
     margin: 0;
@@ -5,14 +13,16 @@ body{
     background-color: #2b2d38;
 }
 
-header{
+.header{
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 .logo h2{
     color: #fff;
-    font-size: 50px;
+    font-size: 3rem;
+    border-bottom: 2px solid #6b6b6b;
 }
 
 .logo span{
@@ -22,15 +32,17 @@ header{
 .sessao1{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 5rem;
 }
-
 
 .titulo h1{
     color: #fff;
-    font-size: 45px;
-    line-height: 50px;
-    margin-top: -16px;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .titulo h2{
@@ -41,11 +53,12 @@ header{
 .titulo a{
     display: inline-block;
     background-color: #8500b9;
-    padding: 15px 60px;
+    padding: 1rem 3rem;
     color: #fff;
-    font-size: 20px;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 15px;
+    margin-top: 1.5rem;
 }
 .titulo a:hover {
     background-color: #5e0083;
@@ -54,43 +67,41 @@ header{
 .linkedin{
     text-decoration: none;
     font-family: 'Oswald';
-    font-size: 20px;
+    font-size: 2rem;
     color: #fff;
     font-weight: 500;
 }
 
 .image1 img{
-    width: 460px;
-    height: auto;
-    margin-top: -40px;
-    margin-left: 55px;
+    width: 28rem;
+
 }
 .projetos{
  display: flex;
  justify-content: center;
  flex-direction: column;
  align-items: center;
- margin-top: 100px;
- margin-bottom: 100px;
+ margin-top: 6.25rem;
+ margin-bottom: 6.25rem;
 }
 
 .projetos h2{
     color: #fff;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 1.2rem;
 }
 
 .projeto{
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 3rem;
 }
 
 .projetoopcoes{
     background-color: #222529;
-    width: 200px;
-    height: 180px;
-    margin-left: 25px;
+    width: 12.5rem;
+    height: 11.25rem;
+    margin-left: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,60 +116,195 @@ header{
 }
 
 .projetoopcoes img{
-    width: 65px;
+    width: 4rem;
 }
 
 .sessao2{
     background-color: #8500b9;
-    height: 342px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 2rem;
 }
 .sessao2 a{
-    border-radius: 20px;
+    border-radius: 1rem;
 }
 
 .titulo2 h1{
     color: #fff;
-    font-size: 35px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .titulo2 h3{
     color: #fff;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: normal;
-    margin-top: -26px;
+    margin-bottom: 1rem;
 
 }
 
 .titulo2 a{
     display: inline-block;
     background-color: #fff;
-    padding: 20px 85px;
+    padding: 1rem 5rem;
     font-size: 19px;
     font-weight: bold;
     cursor: pointer;
-}
-.curriculo{
     text-decoration: none;
 }
 
 .image2 img{
-    width: 380px;
+    width: 23.75rem;
     height: auto;
-    margin-top: 5px;
-    margin-left: 100px;
+    margin-top: .5rem;
+    margin-left: 6.25rem;
 
-}
-.imagesocial{
-    width: 30px;
-    margin-left: 45px;    
 }
 .redesocial{
     display: flex;
     justify-content: center;
-    margin-top: -60px;
-    padding-bottom: 20px;
+    align-items: center;
+    margin-top: 0;
+    padding-bottom: 2rem;
+    gap: 3rem;    
+}
+.imagesocial{
+    width: 2rem;
+}
+
+@media (max-width: 850px){
+    .logo h2{
+        font-size: 4rem;
+    }
+    .sessao1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30rem;
+    }
+    .titulo h1{
+        color: #fff;
+        font-size: 4rem;
+        line-height: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .titulo h2{
+        color: #fff;
+        font-weight: normal;
+        width: 18rem;
+        margin-top: 1rem;
+    }
+    
+    .titulo a{
+        display: inline-block;
+        background-color: #8500b9;
+        padding: 2rem 5rem;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        border-radius: 1rem;
+        margin-top: 1.5rem;
+    }
+    .image1 img{
+        width: 20rem;
+        margin-top: -2rem;
+    }
+    .projetos h2{
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        border-top: 2px solid #6b6b6b;
+        border-bottom: 2px solid #6b6b6b;
+    }
+    .projetos{
+        margin-top: 2rem;
+    }
+    .projeto{
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .projetoopcoes{
+        background-color: #222529;
+        width: 22.5rem;
+        height: 21.25rem;
+        margin-left: 0;
+        margin-bottom: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        font-size: 2rem;
+    }
+    .imgProjeto{
+        position: relative;
+        width: 10rem;
+        padding: 2rem;
+    }
+
+    .sessao2{
+        background-color: #8500b9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sessao2 a{
+        border-radius: 1rem;
+    }
+    .titulo2{
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    .titulo2 h1{
+        display: flex;
+        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+    
+    .titulo2 h3{
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: normal;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    
+    .titulo2 a{
+        display: inline-block;
+        background-color: #fff;
+        padding: 1rem 5rem;
+        font-size: 19px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .image2 img{
+        width: 15rem;
+        height: auto;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+
+    .curriculo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
 }
