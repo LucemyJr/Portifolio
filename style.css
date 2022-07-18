@@ -23,6 +23,10 @@ body{
     color: #fff;
     font-size: 3rem;
     border-bottom: 2px solid #6b6b6b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .logo span{
@@ -175,7 +179,8 @@ body{
 
 @media (max-width: 850px){
     .logo h2{
-        font-size: 4rem;
+        font-size: 3rem;
+        
     }
     .sessao1{
         display: flex;
@@ -187,11 +192,12 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 30rem;
+        padding: 0;
+        margin: 0;
     }
     .titulo h1{
         color: #fff;
-        font-size: 4rem;
+        font-size: 3rem;
         line-height: 3rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -200,23 +206,30 @@ body{
     .titulo h2{
         color: #fff;
         font-weight: normal;
-        width: 18rem;
+        font-size: 1rem;
+        width: 12rem;
         margin-top: 1rem;
     }
     
     .titulo a{
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: #8500b9;
         padding: 2rem 5rem;
         color: #fff;
-        font-size: 2rem;
+        font-size: 1.5rem;
         cursor: pointer;
         border-radius: 1rem;
         margin-top: 1.5rem;
+        width: 3rem;
+        height: 2rem;
+        text-align: center;
     }
     .image1 img{
         width: 20rem;
         margin-top: -2rem;
+        padding: 0 , .5rem;
     }
     .projetos h2{
         color: #fff;
@@ -234,8 +247,8 @@ body{
     }
     .projetoopcoes{
         background-color: #222529;
-        width: 22.5rem;
-        height: 21.25rem;
+        width: 16.5rem;
+        height: 16.25rem;
         margin-left: 0;
         margin-bottom: 2.5rem;
         display: flex;
