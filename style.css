@@ -26,10 +26,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+
 }
 
-.logo span{
+.sobrenome, .barra{
     color: #8500b9;
 }
 
