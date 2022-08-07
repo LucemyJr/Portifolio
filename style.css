@@ -13,10 +13,16 @@ body{
     background-color: #2b2d38;
 }
 
+h1::selection,h2::selection,h3::selection,p::selection,span::selection,br::selection,img::selection,a::selection  {
+    color: #8836a8;
+    background-color: #fff;
+}
+
 .header{
     display: flex;
     align-items: center;
     justify-content: center;
+    user-select: none;
 }
 
 .logo h2{
@@ -55,25 +61,45 @@ body{
 }
 
 .titulo a{
+}
+.titulo a:hover {
+    background-color: #5e0083;
+    transition: 0.3s all;
+}
+.linkedin {
     display: inline-block;
     background-color: #8500b9;
     padding: 1rem 3rem;
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
+    border: 2px solid #2f0044;
     border-radius: 15px;
     margin-top: 1.5rem;
-}
-.titulo a:hover {
-    background-color: #5e0083;
-    transition: 0.3s all;
-}
-.linkedin{
     text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .3s;
+    z-index: 1;
     font-family: 'Oswald';
-    font-size: 2rem;
-    color: #fff;
-    font-weight: 500;
+}
+.linkedin::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #6c0097;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+.linkedin:hover::before {
+    width: 105%;
 }
 
 .image1 img{
@@ -81,12 +107,12 @@ body{
 
 }
 .projetos{
- display: flex;
- justify-content: center;
- flex-direction: column;
- align-items: center;
- margin-top: 6.25rem;
- margin-bottom: 6.25rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
 }
 
 .projetos h2{
@@ -156,6 +182,8 @@ body{
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
+    color: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .image2 img{
@@ -173,6 +201,7 @@ body{
     padding-bottom: 2rem;
     gap: 3rem;    
 }
+
 .imagesocial{
     width: 2rem;
 }
@@ -216,14 +245,12 @@ body{
         align-items: center;
         justify-content: center;
         background-color: #8500b9;
-        padding: 2rem 5rem;
+        padding: 2rem 3.7rem;
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         cursor: pointer;
         border-radius: 1rem;
         margin-top: 1.5rem;
-        width: 3rem;
-        height: 2rem;
         text-align: center;
     }
     .image1 img{
