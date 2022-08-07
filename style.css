@@ -59,9 +59,6 @@ h1::selection,h2::selection,h3::selection,p::selection,span::selection,br::selec
     color: #fff;
     font-weight: normal;
 }
-
-.titulo a{
-}
 .titulo a:hover {
     background-color: #5e0083;
     transition: 0.3s all;
